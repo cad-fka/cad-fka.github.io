@@ -3,15 +3,15 @@
 /* Time to make them attractive, legible, and usable */
 
 body {
-    font-family: Times, serif;
+    /*font-family: Times, serif;*/
     /*background-color: #edc9af;*/
     margin: 0;
     padding: 0;
-    /* Adding the CSS grid */
-    background-image: url("./Group 104.png");
+    
+    /*background-image: url("./Group 104.png");*/
     background-image: url('./Group 105.png');
     background-color: transparent;
-    /*background-color: white;*/
+    
 }
 
 
