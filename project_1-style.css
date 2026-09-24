@@ -8,8 +8,8 @@ body {
     margin: 0;
     padding: 0;
     /* Adding the CSS grid */
-    background-image: url("/Users/first_user/Downloads/Group 104.png");
-    background-image: url('/Users/first_user/Downloads/Group 105.png');
+    background-image: url("./Group 104.png");
+    background-image: url('./Group 105.png');
     background-color: transparent;
     /*background-color: white;*/
 }
@@ -150,16 +150,16 @@ BJCree Font for body text
     margin: 10px;
     margin: 5px;
     padding: 2px;
-    /*background-image: url("/Users/first_user/Downloads/Group 102.png");*/
-    /*background-image: url("/Users/first_user/Downloads/Group 104.png");*/
+    /*background-image: url("./Group 102.png");*/
+    /*background-image: url("./Group 104.png");*/
 
     background-color: transparent;
     background-color: pink;
     background-color: transparent;
     background-color: white;
-    background-image: url('/Users/first_user/Downloads/Group 133(2).png');
-    background-image: url('/Users/first_user/Downloads/Group 137.png');
-    background-image: url('/Users/first_user/Downloads/Group 144.png');
+    background-image: url('./Group 133(2).png');
+    background-image: url('./Group 137.png');
+    background-image: url('./Group 144.png');
     background-size: contain;
 }
 
@@ -316,7 +316,7 @@ So it's multiple lines
     margin-right: 40px;
     padding-left: 20px;
 
-    /*background-image: url("/Users/first_user/Downloads/Group 102.png");*/
+    /*background-image: url("./Group 102.png");*/
     /*background-color: transparent;*/
     /*padding-right: 20px;*/
 
@@ -421,14 +421,14 @@ So it's multiple lines
     1px 1px 0 #FFFFFF;  
     */
     /*columns: #655F2D;*/
-    /*list-style-image: url("/Users/first_user/Downloads/cactus.png");*/
+    /*list-style-image: url("./cactus.png");*/
 }
 
 
 /*
 .ingredients-list li::before {
     /*content: "•";*/
-    /*content:  url("/Users/first_user/Downloads/cactus.png");
+    /*content:  url("./cactus.png");
     color: gold;
     padding-right: 7px;
     height: 2em;
