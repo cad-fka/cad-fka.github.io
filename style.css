@@ -1,0 +1,680 @@
+/* INTENTIONALLY UGLY STARTER STYLES */
+/* These styles are very, very ugly. */
+/* Time to make them attractive, legible, and usable */
+
+body {
+    font-family: Times, serif;
+    /*background-color: #edc9af;*/
+    margin: 0;
+    padding: 0;
+    /* Adding the CSS grid */
+    background-image: url("/Users/first_user/Downloads/Group 104.png");
+    background-image: url('/Users/first_user/Downloads/Group 105.png');
+    background-color: transparent;
+    /*background-color: white;*/
+}
+
+
+/* trying to add outline effect 
+https://stackoverflow.com/questions/11323813/how-to-outline-text-in-html-css
+*/
+
+
+.outline-white
+{
+    
+    /*background-color: white;*/
+    text-shadow:
+    -1px -1px 0 #FFFFFF,
+    1px -1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+    1px 1px 0 #FFFFFF;  
+
+}
+.outline-black
+{
+    
+    /*background-color: white;*/
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;  
+
+}
+
+/*
+Londrina for Headings?
+*/
+.londrina-outline-regular {
+  font-family: "Londrina Outline", sans-serif;
+  font-weight: 400;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*
+Courier Prime for Headings?
+*/
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-bold {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.courier-prime-regular-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.courier-prime-bold-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/*
+MochiyPop for Headings
+*/
+.mochiy-pop-one-regular {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*
+BJCree Font for body text
+*/
+
+.bjcree-regular {
+  font-family: "BJCree", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bjcree-medium {
+  font-family: "BJCree", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.bjcree-semibold {
+  font-family: "BJCree", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bjcree-bold {
+  font-family: "BJCree", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* either use with recipe container or body*/
+.page-layout {
+    display: grid;
+    grid-template-areas: 
+        "recipe-header"
+        "recipe-meta"
+        "ingredients-section"
+        "instructions-section"
+        "recipe-footer";
+    /* YOUR CODE: grid-template-columns */
+    grid-template-columns: auto;
+    
+    grid-template-rows: auto;
+    row-gap: 1px;
+    /*justify-items: stretch;*/
+    /*grid-template-rows: auto;*/
+    /* YOUR CODE: grid-template-rows */
+    min-height: 100vh;
+}
+
+.recipe-container {
+    /*background-color: #F5E4D0;*/
+    background-color: #F5DEB3;
+    /*border: 5px solid #F5E4D0;*/
+    border: 5px solid black;
+    /*border: 10px solid red;*/
+    border-radius: 15px;
+    margin: 10px;
+    margin: 5px;
+    padding: 2px;
+    /*background-image: url("/Users/first_user/Downloads/Group 102.png");*/
+    /*background-image: url("/Users/first_user/Downloads/Group 104.png");*/
+
+    background-color: transparent;
+    background-color: pink;
+    background-color: transparent;
+    background-color: white;
+    background-image: url('/Users/first_user/Downloads/Group 133(2).png');
+    background-image: url('/Users/first_user/Downloads/Group 137.png');
+    background-image: url('/Users/first_user/Downloads/Group 144.png');
+    background-size: contain;
+}
+
+.recipe-header {
+    background-color: turquoise;
+    background-color: #87CEEB;
+    background-color: #6E9A65;
+  
+    background-size: contain;
+
+    border: 5px solid black;
+    border-radius: 5px;
+    /*text-align: center;*/
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    grid-area: "recipe-header";
+    flex-wrap: wrap;
+    
+    gap:20px;
+    /*align-items: flex-start;*/
+    margin-left: 40px;
+    margin-right: 40px;
+    flex-grow: 1;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    /*max-width: 100%; */
+    
+    /*width: fit-content;*/
+    /*height: fit-content;*/
+
+
+}
+
+.recipe-title {
+    
+    color: black;
+    font-size: 40px;
+    text-align: left;
+    text-align: center;
+
+    
+    /*text-decoration: underline;*/
+}
+
+/*
+https://stackoverflow.com/questions/21103622/auto-resize-image-in-css-flexbox-layout-and-keeping-aspect-ratio
+*/
+.recipe-image {
+    /*width: 500px;*/
+    /*flex-basis: 200px;*/
+    /*height: 500px;*/
+    /*border: 5px solid black;*/
+    /*display: block;*/
+    object-fit: cover;
+    height: 100vh;
+    /*height: 400px;*/
+    /*height: 200px;*/
+    /*flex-shrink:6;*/
+    flex-grow: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+    min-width: 0%; 
+    max-width: 100%;
+    flex-basis:500px;
+    max-height: 100%; 
+    
+    min-height: 0%;
+    
+    
+    
+}
+
+.image-block {
+    /*width: 500px;*/
+    /*flex-basis: 200px;*/
+    /*height: 500px;*/
+    /*border: 5px solid black;*/
+    display: block;
+    object-fit: fill;
+    max-width:100%;
+    height: 100vh;
+    height: 400px;
+    /*height: 200px;*/
+    flex-shrink:3;
+    
+}
+
+/* how to get this section to take up all the width?*/
+.recipe-meta {
+    grid-area: "recipe-meta";
+    background-color: gray;
+    background-color: white;
+    border: 5px black;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+
+    gap: 20px;
+    flex-basis: 60px;
+    flex-wrap: wrap;
+    /*flex-grow: 4;*/
+    padding: 4px;
+    
+    /*align-items: flex-start;*/
+    margin-left: 40px;
+    margin-right: 40px;
+    border-style: double;
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    /*flex-basis: auto;*/
+    /*flex-wrap: wrap;*/
+    flex-shrink: 4;
+    flex-grow: 4;
+    text-align: left;
+    /*border-right: 2px solid silver;*/
+
+
+}
+
+/*
+Want to make the text smaller, and also to wrap around
+So it's multiple lines
+*/
+.recipe-description {
+    
+    background-color: #F5E4D0;
+    border: 5px solid black;
+    border-radius: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 200px;
+    font-size: 20px;
+  
+    color: black;
+    text-align: left;
+    /*font-style: italic;*/
+    /*align-items: center;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:40px;
+    margin-right: 40px;
+    padding-left: 20px;
+
+    /*background-image: url("/Users/first_user/Downloads/Group 102.png");*/
+    /*background-color: transparent;*/
+    /*padding-right: 20px;*/
+
+    /*color: purple;*/
+}
+
+/* do not want this to take up full viewpoint, so should wrap around */
+
+/*
+.recipe-description  p {
+    font-size: 16px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 10px;
+    text-align: center;
+    text-align: left;
+    font-style: italic;
+}
+*/
+
+
+
+.ingredients-section {
+    grid-area: "ingredients-section";
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: #EDC9AF;
+    
+    border: 5px solid black;
+    border-radius: 5px;
+    /*border-right: 1px solid silver;*/
+    
+    margin: 40px;
+    padding: 40px;
+    min-width: 0;
+    /*width: fit-content;*/
+    /*height: fit-content;*/
+    
+}
+
+.ingredients-section h2 {
+   
+
+    /*background-color: pink;*/
+    /*border: 5px solid brown;*/
+    /*border-right: 1px solid silver;*/
+    
+    font-size: 40px;
+    color: #87CEEB;
+    color: black;
+
+    /*text-decoration: underline;*/
+    /*text-decoration-color: turquoise;*/
+    text-underline-offset: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+}
+ 
+/* need to add color here */
+.ingredients-list {
+    list-style: none;
+    /*list-style-type: square;*/
+    gap: 20px;
+    padding-top: 20px;
+    /*margin: 50px;*/
+    /*margin-left: 40px;*/
+    /*padding-left: 40px;*/
+    
+
+    
+}
+
+.ingredients-list li {
+    /*background-color: white;*/
+    /*border: 1px solid black;*/
+    /*margin: 2px;*/
+    margin-bottom: 20px;
+    margin-bottom: auto;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    letter-spacing: 0.2rem;
+    overflow-wrap: break-word;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap:8px;
+    font-weight: normal;
+    color: black;
+    
+    /*
+    text-shadow:
+    -1px -1px 0 #FFFFFF,
+    1px -1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+    1px 1px 0 #FFFFFF;  
+    */
+    /*columns: #655F2D;*/
+    /*list-style-image: url("/Users/first_user/Downloads/cactus.png");*/
+}
+
+
+/*
+.ingredients-list li::before {
+    /*content: "•";*/
+    /*content:  url("/Users/first_user/Downloads/cactus.png");
+    color: gold;
+    padding-right: 7px;
+    height: 2em;
+    width: 2em;
+   
+}
+
+*/
+
+
+/*
+Need to fix re-sizing this for smaller screens 
+Probably just re-do the size of the Headers
+Actually, can do for @media
+*/
+.instructions-section {
+    grid-area: "instructions-section";
+    margin: 40px;
+
+    background-color: lightgray;
+    background-color: #D2B48C;
+    
+    
+    border: 5px solid black;
+    border-radius: 5px;
+    
+   
+    
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: fit-content;
+    height: fit-content;
+    min-width: 0;
+
+    
+}
+
+.instructions-section h2 {
+    font-size: 40px;
+  
+    color: black;
+    /*text-decoration: underline;*/
+    
+    text-underline-offset: 20px;
+
+    /*background-color: lightgray;*/
+    /*border: 3px solid navy;*/
+}
+
+.instructions-list {
+    padding-left: 1px;
+    margin-bottom: 0.2rem;
+
+}
+
+.instruction-step {
+    /*background-color: beige;*/
+    /*border: 2px solid maroon;*/
+    /*margin: 3px;*/
+    line-height: 2.5;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-top: 20px;
+    overflow-wrap: break-word;
+    font-size: 20px;
+    padding-left: 1px;
+}
+
+.recipe-footer {
+    grid-area: "recipe-footer";
+    background-color: #F5E4D0;
+    /*text-align: right;*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    font-size: 12px;
+    /*border-top: 1.5px double black;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin: 40px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.recipe-footer-cite {
+    font-size: 20px;
+    font-weight: none;
+    /*text-decoration:dotted;*/
+    color: black;
+}
+
+.recipe-footer-tags {
+    margin-top: 20px;
+    font-size: 20px;
+    /*font-weight: bold;*/
+    /*font-style: italic;*/
+    color:black;
+
+   
+}
+
+.footer-tag {
+    /*background-color: turquoise;*/
+    border: 5px solid turquoise;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.style-info-for-class{
+    font-size: 20px;
+    color: #FF7043;
+}
+
+.cactus_icon {
+    height: 1em; 
+    width: 1em;
+}
+
+
+
+* {
+    margin: 2px;
+    padding: 1px;
+}
+
+
+/* Responsive Breakpoint */
+/* 2026-09-20: Still need to fix!*/
+/* work on this for 2026-09-22; need to get southwest style in*/
+@media (max-width: 48rem) {
+  .page-layout {
+    grid-template-areas: 
+        "recipe-header"
+        "recipe-meta"
+        "recipe-description"
+        "ingredients-section"
+        "instructions-section"
+        "recipe-footer";
+    /* YOUR CODE: grid-template-columns */
+    grid-template-columns: auto;
+  }
+  
+  .list-section {
+    /* YOUR CODE: change flex-direction if needed */
+    flex-direction: column;
+  }
+  .recipe-header {
+    /* YOUR CODE: change flex-direction if needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .recipe-title{
+    font-size: 30px;
+  }
+  .recipe-image {
+    
+    object-fit: contain;
+    min-width: 0%;
+    width:200px;
+    height: 200px;
+  }
+  .recipe-meta{
+    margin: 10px;
+  }
+  .recipe-description{
+    margin: 10px;
+  }
+  .ingredients-section {
+    /* YOUR CODE: change flex-direction if needed */
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    width: fit-content;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    flex-shrink: 2;
+    align-items: center;
+  }
+  .ingredients-section h2 {
+    /* YOUR CODE: change flex-direction if needed */
+    font-size: 30px;
+  }
+  .ingredients-list li {
+    /* YOUR CODE: change flex-direction if needed */
+    font-size: 15px;
+  }
+  .instructions-section {
+    /* YOUR CODE: change flex-direction if needed */
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    flex-shrink: 2;
+    align-items: center;
+
+  }
+  .instruction-step {
+    /* YOUR CODE: change flex-direction if needed */
+
+    margin-bottom: 20px;
+    line-height: 1;
+    letter-spacing: 0px;
+    word-spacing: 1px;
+    margin-top: 20px;
+    overflow-wrap: break-word;
+    font-size: 15px;
+    margin-left: 30px;
+
+  }
+  .instructions-section h2 {
+    /* YOUR CODE: change flex-direction if needed */
+    font-size: 30px;
+  }
+  .recipe-footer {
+    /* YOUR CODE: change flex-direction if needed */
+    display: flex;
+    flex-direction: column;
+   
+    padding: 10px;
+    
+    margin: 10px;
+
+    
+  }
+  .recipe-footer-cite{
+    font-size: 15px;
+  }
+  .recipe-footer-tags{
+    font-size: 15px;
+  }
+  
+
+}
