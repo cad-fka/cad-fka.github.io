@@ -130,8 +130,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             <div class="restaurant-item"> 
                 <p class="restaurant-name"> ${resto.name} </p>
                 <p class="restaurant-cuisine"> ${resto.cuisine}</p>
-                <p class="restaurant-rating"> ${resto.rating}</p>
-                <p class="restaurant-price"> ${resto.priceRange}</p>
             </div>
             `
             
