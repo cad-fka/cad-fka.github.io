@@ -58,7 +58,7 @@ document.querySelector('#load-then').addEventListener('click', () => {
       data.forEach((rest) => restaurants.push(rest));
       //console.log(restaurants.length);
       //console.log(restaurants);
-      log('#log-then', `The callback got ${restaurants.length} restaurants.`);
+      log('#log-then', `The callback got ${data.length} restaurants.`);
       setCountButton(true);
     });
 
