@@ -27,7 +27,9 @@ document.querySelector('#run-todo-1').addEventListener('click', () => {
     () => {log('#log-todo-1', 'Ready!')},
     2000);
 
-  // My Answer: "Waiting..." should load first
+  /*
+  My Prediction: "Waiting..." should load first
+  */
 
   log('#log-todo-1', 'Waiting...');
 });
@@ -56,7 +58,7 @@ document.querySelector('#load-then').addEventListener('click', () => {
       data.forEach((rest) => restaurants.push(rest));
       //console.log(restaurants.length);
       //console.log(restaurants);
-      log('#log-then', `${restaurants.length} restaurants have arrived`);
+      log('#log-then', `The callback got ${restaurants.length} restaurants.`);
       setCountButton(true);
     });
 
@@ -93,6 +95,8 @@ document.querySelector('#load-await').addEventListener('click', async () => {
       const data = await response.json();
       showStatus("success", "data loaded");
       data.forEach((rest) => restaurants.push(rest));
+      showStatus("success", `Loaded ${restaurants.length} restaurants.`);
+      
       setCountButton(true);
     }
     
