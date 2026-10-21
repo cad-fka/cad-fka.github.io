@@ -7,9 +7,9 @@
 // Loading happens later, inside a callback or an async function. Saving the data
 // out here is how the count button can use it once it arrives.
 let restaurants = [];
-const RFILE = "./restaurants.json";
+const RFILE = "./tutorial_6-restaurants.json";
 
-//const RFILE_ = "./restaurants_.json"; //intentionally incorrect to test for errors
+//const RFILE_ = "./tutorial_6-restaurants_.json"; //intentionally incorrect to test for errors
 
 // ============================================
 // TODO 1: A CALLBACK THAT RUNS LATER
