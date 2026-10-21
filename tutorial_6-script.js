@@ -51,6 +51,9 @@ document.querySelector('#load-then').addEventListener('click', () => {
   //   .then((data) => {
   //     ...save data into restaurants, log how many arrived, and call setCountButton(true)
   //   });
+  if (restaurants.length > 0) {
+      restaurants = [];
+  } 
 
   fetch(RFILE)
     .then((response) => response.json())
@@ -83,6 +86,9 @@ document.querySelector('#load-await').addEventListener('click', async () => {
   //   ...console.error the error, then showStatus('error', ...) with a friendly message
   // }
   showStatus("loading", "Loading restaurants ...");
+  if (restaurants.length > 0) {
+      restaurants = [];
+  } 
 
   try {
     //const response = await fetch(RFILE_);
@@ -94,8 +100,7 @@ document.querySelector('#load-await').addEventListener('click', async () => {
     else {
       const data = await response.json();
       data.forEach((rest) => restaurants.push(rest));
-      showStatus("success", `Loaded ${restaurants.length} restaurants.`);
-      
+      showStatus("success", `Loaded ${data.length} restaurants.`);
       setCountButton(true);
     }
     
