@@ -93,7 +93,6 @@ document.querySelector('#load-await').addEventListener('click', async () => {
     }
     else {
       const data = await response.json();
-      showStatus("success", "data loaded");
       data.forEach((rest) => restaurants.push(rest));
       showStatus("success", `Loaded ${restaurants.length} restaurants.`);
       
