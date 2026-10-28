@@ -300,7 +300,7 @@ document.querySelector('#draw-scatter').addEventListener('click', () => {
 // Load the restaurants when the page opens (the async/await code from Tutorial 6)
 async function loadRestaurants() {
   try {
-    const response = await fetch('./restaurants.json');
+    const response = await fetch('./tutorial_7-restaurants.json');
     if (!response.ok) {
       throw new Error(`HTTP error: ${response.status}`);
     }
